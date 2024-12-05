@@ -1,0 +1,170 @@
+1. Python Programlama Diline Giriş
+Python’un Özellikleri:
+
+Kolay öğrenilebilir, okunabilir ve yazılabilir bir dil.
+Platform bağımsız: Windows, macOS, Linux gibi tüm sistemlerde çalışabilir.
+Geniş standart kütüphane desteği ile birçok ihtiyaca hazır çözümler sunar.
+Açık kaynaklı ve büyük bir topluluk desteğine sahip.
+Kullanım Alanları:
+
+Web geliştirme (Django, Flask)
+Veri bilimi (NumPy, Pandas)
+Makine öğrenimi (Scikit-learn, TensorFlow)
+Sibernetik, oyun geliştirme ve otomasyon.
+Kurulum:
+
+Python resmi sitesi üzerinden indirilebilir.
+Anaconda gibi ortam yöneticileriyle hızlı kurulum yapılabilir.
+IDE Seçimi:
+
+PyCharm: Profesyonel yazılım geliştirme için ideal.
+VS Code: Hafif ve esnek bir yapı sunar.
+Jupyter Notebook: Veri analitiği ve deneysel çalışmalar için uygun.
+2. Değişkenler ve Veri Tipleri
+Değişken Tanımlama:
+
+Python’da değişkenler tür belirtmeksizin tanımlanır.
+python
+Kodu kopyala
+x = 10       # int
+name = "Ali" # str
+pi = 3.14    # float
+Veri Tipleri:
+
+Sayısal: int, float, complex
+Metin: str
+Koleksiyonlar: list, tuple, set, dict
+Boole: bool
+Veri Dönüşümleri:
+
+int(), float(), str(), list() gibi dönüşüm fonksiyonları kullanılır.
+python
+Kodu kopyala
+age = "25"
+age = int(age)  # string'den integer'a dönüşüm
+3. Koşul İfadeleri ve Döngüler
+Koşul İfadeleri:
+
+if, elif, else bloklarıyla çalışır.
+python
+Kodu kopyala
+x = 10
+if x > 5:
+    print("X, 5'ten büyüktür.")
+elif x == 5:
+    print("X, 5'e eşittir.")
+else:
+    print("X, 5'ten küçüktür.")
+Döngüler:
+
+For Döngüsü:
+Liste, sözlük gibi koleksiyonlar üzerinde döner.
+python
+Kodu kopyala
+for i in range(5):
+    print(i)  # 0'dan 4'e kadar yazdırır
+While Döngüsü:
+Belirli bir koşul doğru olduğu sürece çalışır.
+python
+Kodu kopyala
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+4. Fonksiyonlar ve Modüler Programlama
+Fonksiyon Tanımlama:
+
+Parametre alabilir veya almayabilir. Geri dönüş değerleri olabilir.
+python
+Kodu kopyala
+def toplama(a, b):
+    return a + b
+result = toplama(5, 10)
+print(result)  # 15
+Lambda Fonksiyonları:
+
+Kısa, anonim fonksiyonlardır.
+python
+Kodu kopyala
+kare = lambda x: x**2
+print(kare(4))  # 16
+Modüler Programlama:
+
+Kendi modülünüzü oluşturabilirsiniz:
+my_module.py adlı dosya:
+python
+Kodu kopyala
+def merhaba():
+    print("Merhaba Dünya!")
+Kullanımı:
+python
+Kodu kopyala
+import my_module
+my_module.merhaba()
+5. Dosya İşlemleri
+Dosya Açma/Kapama:
+
+python
+Kodu kopyala
+with open("dosya.txt", "w") as file:
+    file.write("Merhaba Dosya!")
+Dosya Okuma:
+
+python
+Kodu kopyala
+with open("dosya.txt", "r") as file:
+    content = file.read()
+    print(content)
+Dosya Modları:
+
+r: Sadece okuma
+w: Üzerine yazma
+a: Ekleme
+6. Hata Yönetimi ve Debugging
+Try-Except Yapısı:
+
+python
+Kodu kopyala
+try:
+    x = int("abc")
+except ValueError as e:
+    print("Hata:", e)
+Debugging:
+
+pdb modülü veya IDE’lerin hata ayıklama araçları kullanılabilir.
+7. Python’un Dahili Kütüphaneleri
+Math Modülü:
+
+python
+Kodu kopyala
+import math
+print(math.sqrt(16))  # 4.0
+Datetime Modülü:
+
+python
+Kodu kopyala
+from datetime import datetime
+print(datetime.now())
+OS Modülü:
+
+python
+Kodu kopyala
+import os
+print(os.getcwd())  # Çalışılan dizini döndürür
+8. Proje ve Uygulamalar
+Basit bir hesap makinesi:
+
+python
+Kodu kopyala
+def hesap_makinesi():
+    a = int(input("Birinci sayı: "))
+    b = int(input("İkinci sayı: "))
+    print(f"Toplam: {a+b}")
+hesap_makinesi()
+Basit bir oyun:
+
+python
+Kodu kopyala
+import random
+tahmin = random.randint(1, 10)
+print(f"1-10 arasında bir sayı tuttum, tahmin et!")
